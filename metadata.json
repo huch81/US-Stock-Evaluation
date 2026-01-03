@@ -1,0 +1,7 @@
+{
+  "name": "US Market Sentinel",
+  "description": "A comprehensive real-time US stock market dashboard providing latest indices, VIX, Fear & Greed Index, and sector heatmaps using Gemini search grounding.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
