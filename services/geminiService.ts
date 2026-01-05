@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { MarketState } from "../types";
 
 export const fetchMarketData = async (): Promise<MarketState> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
   
   const prompt = `Search for the latest closing or current values for:
 1. Major US Indices: S&P 500, Dow Jones Industrial Average, and NASDAQ Composite (include value, point change, percentage change).
